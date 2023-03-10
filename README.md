@@ -10,6 +10,6 @@
 ---
 pip install -r requirements.txt
 
-pytest --alluredir=allure-results
+pytest --alluredir=allure-results tests .
 
 allure.bat serve allure-results
