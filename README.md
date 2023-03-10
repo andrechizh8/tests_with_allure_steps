@@ -9,5 +9,7 @@
 
 ---
 pip install -r requirements.txt
+
 pytest --alluredir=allure-results
+
 allure.bat serve allure-results
