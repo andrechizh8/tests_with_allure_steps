@@ -22,7 +22,7 @@ def test_decorator_steps():
 
 @allure.step('Открыть главную страницу')
 def open_main_page():
-    browser.open('https://github.com/')
+    browser.open('https://github.com/').driver.maximize_window()
 
 
 @allure.step('Найти репозиторий {repository}')

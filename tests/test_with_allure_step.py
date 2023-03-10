@@ -13,7 +13,7 @@ from selene.support.shared import browser
 @allure.link('https://github.com', name='Тестирование')
 def test_github_issue():
     with allure.step('Открыть главную страницу'):
-        browser.open('https://github.com/')
+        browser.open('https://github.com/').driver.maximize_window()
     with allure.step('Найти репозиторий'):
         browser.element('.header-search-input').click()
         browser.element('.header-search-input').type('eroshenkoam/allure-example')
